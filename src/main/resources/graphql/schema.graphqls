@@ -1,0 +1,35 @@
+type Query {
+    getAllMoviesHandler: [Movie]
+}
+
+type Mutation {
+    addMovie(createMovieInput: CreateMovieInput): Movie
+    updateMovie(updateMovieInput: UpdateMovieInput): Movie
+    deleteMovie(movieId: ID!): String
+}
+
+type Movie {
+    id: ID!
+    title: String!
+    director: String!
+    studio: String!
+    releaseYear: String!
+    movieCast: [String]!
+}
+
+input CreateMovieInput {
+    title: String!
+    director: String!
+    studio: String!
+    releaseYear: Int!
+    movieCast: [String]!
+}
+
+input UpdateMovieInput {
+    id: ID!
+    title: String!
+    director: String!
+    studio: String!
+    releaseYear: Int!
+    movieCast: [String]!
+}

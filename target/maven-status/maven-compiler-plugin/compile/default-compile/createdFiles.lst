@@ -1,0 +1,6 @@
+dev/graphql/movieapi/repository/MovieRepository.class
+dev/graphql/movieapi/controller/MovieController.class
+dev/graphql/movieapi/service/MovieService.class
+dev/graphql/movieapi/inputs/CreateMovieInput.class
+dev/graphql/movieapi/MovieApiApplication.class
+dev/graphql/movieapi/models/Movie.class
